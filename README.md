@@ -1,72 +1,17 @@
-![Binaryhood](Logo/BinaryhoodLogo.png)
+## Chatbot for Customer Support
 
-# ChatBot
+The Customer Support Chatbot is designed to facilitate natural language conversations with users, leveraging Microsoft DialoGPT, a pre-trained language model capable of generating human-like responses. This project integrates DialoGPT with Flask, a Python web framework, to create a web application for interacting with users through a chat interface.
 
-## Installation & Setup
+## Technologies Used:
+1. Microsoft DialoGPT: Utilized for generating conversational responses.
+2. Flask: Employed as the backend web framework for handling HTTP requests and responses.
+3. HTML, CSS, JavaScript: Used for the frontend development to create an interactive and visually appealing chat interface.
+4. jQuery: Implemented to handle HTTP requests between the frontend and backend components.
 
-[Install Python] https://www.dataquest.io/blog/installing-python-on-mac/
+## Usage:
+Once the application is running, users can initiate conversations by typing messages into the chat interface. The chatbot will generate responses based on the input provided by the user. Users can engage in natural language conversations and receive helpful responses from the chatbot.
 
-[Install pip] https://phoenixnap.com/kb/install-pip-mac
+In addition to the Python code and web interface, the project includes a intents.json file where you can store additional information or configuration settings for the chatbot. You can modify this file as needed to customize the behavior of the chatbot or to store persistent data.
 
-If you have Python & pip installed then check their version in the terminal or command line tools
-
-```
-python3 --version
-```
-
-```
-pip --version
-```
-
-## Installing Flask
-
-In your terminal run the requirements.txt file using this pip
-
-```
-pip install -r requirements.txt
-```
-
-
-## Running ChatBot Application in Terminal
-
-```
-cd into your directory
-```
-
-```
-python app.py
-```
-
-
-
-## What you will create
-
-In this tutorial, I will guide you through the process of building a chatbot that can carry out conversations with users using natural language processing.
-
-To start, we will be using Microsoft DialoGPT, a pre-trained language model that can generate human-like responses to given prompts. We will be integrating DialoGPT with Flask, a popular Python web framework, to create a web application that can communicate with users via a chat interface.
-
-For the frontend of our application, we will be using HTML, CSS, and JavaScript to create a visually appealing and interactive chat interface. Additionally, we will be using jQuery to handle the HTTP requests that are made to the backend server.
-
-Throughout the tutorial, I will provide step-by-step instructions on how to set up your development environment, install the necessary dependencies, and create the required files and code for the application. I will also explain how to train and fine-tune the DialoGPT model to improve the accuracy of its responses.
-
-By the end of this tutorial, you will have a fully functional chatbot that can engage in conversations with users, and you will have gained valuable experience in using Microsoft DialoGPT, Flask, and web development technologies such as HTML, CSS, and JavaScript.
-
-# ChatBot Link
-The Chatbot is constructed using the Microsoft/DialoGPT-medium model.
-
-```
-https://huggingface.co/microsoft/DialoGPT-medium
-```
-
-# User-Html
-
-```
-var userHtml = '<div class="d-flex justify-content-end mb-4"><div class="msg_cotainer_send">' + user_input + '<span class="msg_time_send">'+ time + 
-    '</span></div><div class="img_cont_msg"><img src="https://i.ibb.co/d5b84Xw/Untitled-design.png" class="rounded-circle user_img_msg"></div></div>';
-```
-
-# Bot-HTML
-
-```
-var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + bot_response + '<span class="msg_time">' + time + '</span></div></div>';
-```
+## Training the Chatbot:
+To improve the accuracy of the chatbot's responses, you can fine-tune the DialoGPT model by providing it with additional training data. Refer to the documentation provided by Microsoft for guidance on training and fine-tuning DialoGPT.
