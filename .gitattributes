@@ -1,3 +1,0 @@
-*.py linguist-language=python
-tests/** linguist-language=Python
-*.txt text eol=lf
